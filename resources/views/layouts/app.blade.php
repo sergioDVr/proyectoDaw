@@ -53,7 +53,7 @@
                         </li>
                     @endif
                     <li class="nav-item searhGrande d-none d-none d-md-block">
-                        <a class="btn btn-outline-success" href="{{ route('comida.create') }}">
+                        <a class="btn btn-outline-success" href="{{ route('menu.create') }}">
                             <i class="fas fa-plus"></i>
                             Publicar una comida
                         </a>
@@ -71,6 +71,21 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('home') }}">
+                                        {{ __('Perfil') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('misMenus') }}">
+                                        {{ __('Mis menús') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('misEventosPublicados') }}">
+                                        {{ __('Mis eventos publicadas') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('misEventosReservados') }}">
+                                        {{ __('Mis eventos reservados') }}
+                                    </a>
+                                    <a class="dropdown-item" href="MENSAJESpner ruta">
+                                        {{ __('Mensajes') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -94,7 +109,7 @@
                             </li>
 
                             <li class="nav-item searhGrande d-md-none">
-                                <a class="btn btn-outline-success" href="{{ route('comida.create') }}">
+                                <a class="btn btn-outline-success" href="{{ route('menu.create') }}">
                                     <i class="fas fa-plus"></i>
                                     Publicar una comida
                                 </a>

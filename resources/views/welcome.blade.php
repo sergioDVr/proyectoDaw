@@ -19,7 +19,7 @@
     <div class="container">
         <h2>Próximas Comidas: </h2>
         <div class="row">
-            @foreach ($comidas as $comida)
+            @foreach ($menus as $comida)
                 <div class="col-md-4 unaComida">
                     <h3>{{$comida->name}}</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eaque explicabo fuga inventore

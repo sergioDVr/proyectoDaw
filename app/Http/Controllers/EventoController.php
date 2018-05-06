@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Fecha;
+use App\Evento;
 use Illuminate\Http\Request;
 
-class FechaController extends Controller
+class EventoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class FechaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Fecha  $fecha
+     * @param  \App\Evento  $fecha
      * @return \Illuminate\Http\Response
      */
-    public function show(Fecha $fecha)
+    public function show(Evento $fecha)
     {
         return $fecha;
     }
@@ -52,10 +52,10 @@ class FechaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Fecha  $fecha
+     * @param  \App\Evento  $fecha
      * @return \Illuminate\Http\Response
      */
-    public function edit(Fecha $fecha)
+    public function edit(Evento $fecha)
     {
         //
     }
@@ -64,10 +64,10 @@ class FechaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Fecha  $fecha
+     * @param  \App\Evento  $fecha
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Fecha $fecha)
+    public function update(Request $request, Evento $fecha)
     {
         //
     }
@@ -75,10 +75,10 @@ class FechaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Fecha  $fecha
+     * @param  \App\Evento  $fecha
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Fecha $fecha)
+    public function destroy(Evento $fecha)
     {
         //
     }

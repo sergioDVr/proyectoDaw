@@ -12,25 +12,27 @@
 */
 
 Route::get('/', function () {
-    $data = DB::select('SELECT * FROM comidas');
+    $data = DB::select('SELECT * FROM menus');
 
     return View::make('welcome')
-        ->with( 'comidas', $data );
+        ->with( 'menus', $data );
 });
-//Comidas
-Route::resource('comida', 'ComidaControlador');
-Route::post('/comida/reservar', 'ComidaControlador@reservar')->name('reservar');
+//Menus
+Route::resource('menu', 'MenuControlador');
+//Route::post('/comida/reservar', 'MenuControlador@reservar')->name('reservar');
 Route::get('/busqueda','ComidasController@ver')->name('busqueda');
 
-//Fechas
-Route::resource('fecha', 'FechaController');
+//Eventos
+Route::resource('evento', 'EventoController');
 
 Auth::routes();
-
-//Autentificacion
-Route::get('/home', 'HomeController@index')->name('home');
 
 //Autentificacion con facebook
 Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider')->name('social.auth');
 Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
 
+//Dashboard
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/misMenus','HomeController@misMenus')->name('misMenus');
+Route::get('/home/misEventosReservados','HomeController@misEventosReservados')->name('misEventosReservados');
+Route::get('/home/misEventosPublicados','HomeController@misEventosPublicados')->name('misEventosPublicados');

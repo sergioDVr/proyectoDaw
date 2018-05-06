@@ -13,7 +13,7 @@ class CreateComidasTable extends Migration
      */
     public function up()
     {
-        Schema::create('comidas', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             //
             $table->increments('id');
             $table->string('name');
@@ -32,6 +32,6 @@ class CreateComidasTable extends Migration
      */
     public function down()
     {
-            Schema::drop('comidas');
+            Schema::drop('menus');
     }
 }
