@@ -1,0 +1,87 @@
+body{
+    background-color: #f3fff2;
+}
+.searhGrande{
+    padding-right: 40px;
+}
+.contentHr{
+    display: inline-block;
+    width: 45%;
+}
+.separacionO{
+    position: relative;
+    top: -11px;
+    color: #b9b9b9;
+}
+#iconoFacebook{
+    width: 28px;
+    margin-right: 7px;
+}
+#botonFace{
+    width: 100%;
+    background-color: #395a9a;
+    padding: 4px 2px;
+}
+.btnRegistrarse{
+    width: 100%;
+}
+.contCenter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formBuscaPrinci{
+    position: absolute;
+    background-color: rgba(221, 255, 211, 0.6);
+    padding: 20px 50px 50px 50px;
+    border-radius: 5px;
+}
+#tituloFormBusc{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+.unaComida{
+
+}
+.pieComida{
+    display: flex;
+    justify-content: space-between;
+}
+.usuarioComida{
+    margin-top: 10px;
+}
+.imgUsuarioComida{
+    margin-top: -10px;
+}
+.tituloComida{
+    font-size: 2.5em;
+}
+.precioRacion{
+    font-size: 2em;
+}
+.cabeceraReservaComida{
+    display: flex;
+    justify-content: space-between;
+}
+.acomprar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.seperaComida{
+    margin-top: 15px;
+}
+.anchoBoton{
+    width: 100%;
+    margin-top: 10px;
+}
+.fondoComida{
+    background-color:#b1ffa8;
+    border-radius: 5px;
+}
+.formularioReserva{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
